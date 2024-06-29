@@ -1,0 +1,36 @@
+title: My Jekyll Site
+description: A simple Jekyll site
+url: "https://github.com"
+baseurl: "/blog"
+
+markdown: kramdown
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+github_username: Frank-003
+repository: Frank-003/My-Landing-Page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Frankie Chan"
+      comments: true
